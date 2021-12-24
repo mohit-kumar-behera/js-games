@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta link-colorarset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <title>Ratmaze</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a href="/js-games" class="link">🛖</a>
+
+    <div class="container-fluid">
+      <div class="ratmaze-controller d-flex justify-content-center">
+        <div class="control prevNext">
+          <button class="mazebtn prev--btn">Previous</button>
+        </div>
+        <div class="control stats d-flex align-items-center">
+          <span class="tag">Level</span>
+          <span class="level start">2</span>
+          <span class="divider">/</span>
+          <span class="level final">5</span>
+        </div>
+        <div class="control prevNext">
+          <button class="mazebtn next--btn">Next</button>
+        </div>
+      </div>
+
+      <div class="ratmaze-container">
+        <div class="ratmaze d-flex flex-column"></div>
+      </div>
+
+      <div class="ratmaze-instruction">
+        <button class="mazebtn instruction--btn">Instruction</button>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <div class="overlay-model hidden">
+      <div class="overlay-model-cancel">
+        <button type="button" class="mazebtn close-model--btn">&times;</button>
+      </div>
+
+      <div class="overlay-model-content"></div>
+    </div>
+  </body>
+</html>
