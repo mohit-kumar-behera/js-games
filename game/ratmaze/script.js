@@ -89,8 +89,7 @@ if (localStorage.getItem('ratmaze-levellog')) {
   localStorage.setItem('ratmaze-levellog', levelLog);
 }
 
-// currLevel = findLastCompletedLevel();
-currLevel = 4;
+currLevel = findLastCompletedLevel();
 
 let currMaze, currDimension;
 let i,
